@@ -50,10 +50,10 @@ var snowflakes =
 	var MAX_SNOWFLAKES = 200;
 	var SNOWFLAKE_HORIZONTAL_MOVEMENT = 10;
 	var SNOWFLAKE_HORIZONTAL_SPEED = 1;
-	var SNOWFLAKE_VERTICAL_SPEED = 3;
+	var SNOWFLAKE_VERTICAL_SPEED = 5;
 	var ADD_SNOWFLAKE_FREQ = 900;
-	var MOVE_SNOWFLAKE_FREQ = 50;
-	var REMOVE_SNOWFLAKE_FREQ = 1000;
+	var MOVE_SNOWFLAKE_FREQ = 90;
+	var REMOVE_SNOWFLAKE_FREQ = 2000;
 	var Z_INDEX = 10;
 
 	var snowflakes = [];
@@ -67,8 +67,8 @@ var snowflakes =
 	    return Object.assign({
 	        background: 'rgba(255,255,255,0.8)',
 	        borderRadius: '10px',
-	        width: '5px',
-	        height: '5px',
+	        width: '7px',
+	        height: '7px',
 	        boxShadow: '1px 1px .5px rgba(0,0,0,0.8)',
 	        addSnowflakeFrequency: ADD_SNOWFLAKE_FREQ,
 	        moveSnowflakeFrequency: MOVE_SNOWFLAKE_FREQ,
