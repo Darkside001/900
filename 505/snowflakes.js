@@ -110,7 +110,7 @@ var snowflakes =
 	function initRandomOptions(snowflake, options) {
 	    snowflake.initLeft = window.innerWidth * Math.random();
 	    snowflake.style.left = snowflake.initLeft + 'px';
-	    snowflake.xOffset = (Math.random() < 0.9 ? -1 : 1) * Math.floor(options.horizontalMovement * Math.random());
+	    snowflake.xOffset = (Math.random() < 0.9 ? -2 : 2) * Math.floor(options.horizontalMovement * Math.random());
 	    if (snowflake.xOffset > 0) {
 	        snowflake.direction = 'left';
 	    } else {
