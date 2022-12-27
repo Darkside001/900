@@ -9,6 +9,19 @@
     }
     setInterval(initSnowflakes, 2000);
     initSnowflakes();
+	  function load_disableupdates(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Disable-Updates. Please wait!.</h1>";
+LoadedMSG="Disable-Updates Loaded";
+PLfile = "pl_disableupdates.bin";
+
+loadPayloadData();
+}
+
+function load_enableupdates(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Enable-Updates. Please wait!.</h1>";
+LoadedMSG="Enable-Updates Loaded";
+PLfile = "pl_enableupdates.bin";
+loadPayloadData();
 </script>	
 </head>
 <body>
@@ -21,8 +34,9 @@
       <a href="900/index.html"><button><font size="3"color="#042EA4"><b>900 GoldHEN</b></font></button></a>
     <button class="btnkme" onMouseOver="msgs.innerHTML='DB-Backup v1.0 - By Leeful / 9.00 Port By Al Azif'"; onmouseout="msgs.innerHTML='Kameleon 900FW Exploit Host (Auto Method) Lite'" onclick="load_backup(); return false">DB-Backup</button>
     <br><br>
-    <button class="btnkme" onMouseOver="msgs.innerHTML='App-2-Usb - Original Version By Stooged / 9.00 Port By Al Azif'"; onmouseout="msgs.innerHTML='Kameleon 900FW Exploit Host (Auto Method) Lite'" onclick="load_app2usb(); return false">App-2-Usb</button>
     <button class="btnkme" onMouseOver="msgs.innerHTML='DB-Restore v1.0 - By Leeful / 9.00 Port Al Azif'"; onmouseout="msgs.innerHTML='Kameleon 900FW Exploit Host (Auto Method) Lite'" onclick="load_restore(); return false">DB-Restore</button>
+	    <button class="btnkme" onMouseOver="msgs.innerHTML='Disable-Updates v1.0 - By Al Azif'"; onmouseout="msgs.innerHTML='Kameleon 900FW Exploit Host (Auto Method) Lite'" onclick="load_disableupdates(); return false">Disable-Updates</button>
+    <button class="btnkme" onMouseOver="msgs.innerHTML='Enable-Updates v1.0 - By Al Azif'"; onmouseout="msgs.innerHTML='Kameleon 900FW Exploit Host (Auto Method) Lite'" onclick="load_enableupdates(); return false">Enable-Updates</button>
 <!--
       <a href="900/index.html"><button><font size="3"><b>900</b></font></button></a>
 -->
