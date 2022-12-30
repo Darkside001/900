@@ -26,9 +26,21 @@
             height: 120px;
             animation: spin 1s linear infinite;
         }
-	    {
+
+        @keyframes spin 
+        {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+	    .loader 
+        {
             position: absolute;
-            left: 30%;
+            left: 70%;
             top: 50%;
             margin: -75px 0 0 -75px;
             border: 10px solid #1f1e1e;
